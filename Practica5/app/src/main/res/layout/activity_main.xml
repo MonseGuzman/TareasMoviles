@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nombre"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/MemoriaTableLayout"
+        android:layout_width="266dp"
+        android:layout_height="281dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre">
+
+        <TableRow
+            android:id="@+id/Fila1TableRow"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/PrimeraImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/SegundoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/TerceraImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila2TableRow"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/CuartaImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/QuintoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/SextoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila3TableRow"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/SeptimoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/OctavoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/NovenoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Fila4TableRow"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/DecimoImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/OnceImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+            <ImageButton
+                android:id="@+id/DoceImageButton"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="#D32F2F"
+                android:onClick="onClick"
+                android:src="@drawable/ic_pregunta" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="267dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MemoriaTableLayout">
+
+        <TextView
+            android:id="@+id/CorrectaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correctas: 0"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/IncorrectoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Incorrectas: 0"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numeroPares"
+            android:textColor="@color/primary_text"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/ParesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center" />
+
+        <ToggleButton
+            android:id="@+id/EmpezarButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary_light"
+            android:checked="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textOff="@string/otravez"
+            android:textOn="@string/empezar" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

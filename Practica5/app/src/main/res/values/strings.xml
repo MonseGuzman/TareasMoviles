@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Memorama</string>
+
+    <string name="empezar">Empezar</string>
+    <string name="numeroPares">Elige el número de pares</string>
+    <string name="otravez">Otra vez</string>
+    <string name="felicidades">¡Felicidades!</string>
+    <string name="nombre">Andrea Monserrat Guzmán López</string>
+</resources>
